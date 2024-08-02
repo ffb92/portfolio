@@ -14,7 +14,7 @@ const navigation = [
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="w-full">
       <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
       <nav className="mx-16 my-4 animate-fade-in flex items-center justify-between ">
         <div className="">
@@ -34,7 +34,7 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0">
+      <div className="h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0">
         <main className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
           <div className="flex flex-col items-center justify-center  min-h-screen">
             <motion.div
@@ -44,7 +44,7 @@ export default function Home() {
               className="flex flex-col items-center"
             >
               <motion.div
-                className="hidden w-screen h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"
+                className="hidden w-full h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
                 transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -58,7 +58,7 @@ export default function Home() {
                 Benjamin Westphal
               </motion.h1>
               <motion.div
-                className="hidden w-screen h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"
+                className="hidden w-full h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0"
                 initial={{ opacity: 1 }}
                 animate={{ opacity: 0 }}
                 transition={{ duration: 1.5, ease: 'easeOut' }}
@@ -71,46 +71,57 @@ export default function Home() {
               </h2>
             </div>
           </div>
-          <div className="hidden w-screen h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
-          <section id="about-me">
-            <h2 className="text-9xl">Hello 👋</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
-              dolorum et minima eum adipisci, eveniet commodi enim nisi.
-            </p>
-          </section>
-          <div className="hidden w-screen h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
-          <section id="skills" className="">
-            <h2 className="text-9xl">Skills</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
-              dolorum et minima eum adipisci, eveniet commodi enim nisi.
-            </p>
-          </section>
-          <div className="hidden w-screen h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
-          <section id="projects" className="">
-            <h2 className="text-9xl">Projects</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
-              dolorum et minima eum adipisci, eveniet commodi enim nisi.
-            </p>
-          </section>
-          <div className="hidden w-screen h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
-          <section id="experience" className="">
-            <h2 className="text-9xl">Experience</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum ex veniam
-              quis doloremque ea distinctio in possimus fuga blanditiis.
-            </p>
-          </section>
-          <div className="hidden w-screen h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
-          <section id="contact" className="">
-            <h2 className="text-9xl">Contact</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum ex veniam
-              quis doloremque ea distinctio in possimus fuga blanditiis.
-            </p>
-          </section>
+          <div className="px-40">
+            <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
+            <section id="about-me" className="flex justify-center content-center py-20 ">
+              <Image
+                src="/about_me.png"
+                alt="about_me_picture"
+                width={300}
+                height={300}
+                className="rounded-2xl"
+              ></Image>
+              <div className='px-10'>
+                <h2 className="text-9xl">Hello 👋</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
+                  dolorum et minima eum adipisci, eveniet commodi enim nisi.
+                </p>
+              </div>
+            </section>
+            <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
+            <section id="skills" className="flex flex-col justify-center content-center py-20 ">
+              <h2 className="text-9xl">Skills</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
+                dolorum et minima eum adipisci, eveniet commodi enim nisi.
+              </p>
+            </section>
+            <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
+            <section id="projects" className="flex flex-col justify-center content-center py-20">
+              <h2 className="text-9xl">Projects</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
+                dolorum et minima eum adipisci, eveniet commodi enim nisi.
+              </p>
+            </section>
+            <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
+            <section id="experience" className="flex flex-col justify-center content-center py-20">
+              <h2 className="text-9xl">Experience</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum ex veniam
+                quis doloremque ea distinctio in possimus fuga blanditiis.
+              </p>
+            </section>
+            <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
+            <section id="contact" className="flex flex-col justify-center content-center py-20">
+              <h2 className="text-9xl">Contact</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti laborum ex veniam
+                quis doloremque ea distinctio in possimus fuga blanditiis.
+              </p>
+            </section>
+          </div>
         </main>
       </div>
     </div>
