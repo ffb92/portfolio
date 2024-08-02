@@ -16,6 +16,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
+      {/* //? Navigation/Header */}
       <nav className="mx-16 my-4 animate-fade-in flex items-center justify-between ">
         <div className="">
           <Link href="/">
@@ -35,7 +36,9 @@ export default function Home() {
         </ul>
       </nav>
       <div className="h-px md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0">
+        {/* //? Main */}
         <main className="bg-gradient-to-tl from-black via-zinc-600/20 to-black">
+          {/* //? Framermotion with name and stripes  */}
           <div className="flex flex-col items-center justify-center  min-h-screen">
             <motion.div
               initial={{ opacity: 0 }}
@@ -64,14 +67,16 @@ export default function Home() {
                 transition={{ duration: 1.5, ease: 'easeOut' }}
               />
             </motion.div>
-
+            {/* //! animate hier eine Auswirkung? Mit FM ergänzen */}
             <div className="my-16 text-center animate-fade-in">
               <h2 className="text-sm text-zinc-500">
                 <p>Creative Web Developer focused on bringing unique ideas to life through code.</p>
               </h2>
             </div>
           </div>
+          {/* //? parent div for the sections */}
           <div className="px-40">
+            {/* //? about-me section starts here */}
             <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
             <section id="about-me" className="flex justify-center content-center py-20 ">
               <Image
@@ -81,7 +86,7 @@ export default function Home() {
                 height={300}
                 className="rounded-2xl"
               ></Image>
-              <div className='px-10'>
+              <div className="px-10">
                 <h2 className="text-9xl">Hello 👋</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quia fugit
@@ -89,6 +94,7 @@ export default function Home() {
                 </p>
               </div>
             </section>
+            {/* //? skills section starts here */}
             <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
             <section id="skills" className="flex flex-col justify-center content-center py-20 ">
               <h2 className="text-9xl">Skills</h2>
@@ -97,6 +103,7 @@ export default function Home() {
                 dolorum et minima eum adipisci, eveniet commodi enim nisi.
               </p>
             </section>
+            {/* //? projects section starts here */}
             <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
             <section id="projects" className="flex flex-col justify-center content-center py-20">
               <h2 className="text-9xl">Projects</h2>
@@ -105,6 +112,7 @@ export default function Home() {
                 dolorum et minima eum adipisci, eveniet commodi enim nisi.
               </p>
             </section>
+            {/* //? experience section starts here */}
             <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/50 via-zinc-300/50 to-zinc-300/0" />
             <section id="experience" className="flex flex-col justify-center content-center py-20">
               <h2 className="text-9xl">Experience</h2>
@@ -113,6 +121,7 @@ export default function Home() {
                 quis doloremque ea distinctio in possimus fuga blanditiis.
               </p>
             </section>
+            {/* //? contact section starts here */}
             <div className=" h-3 md:block bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/50" />
             <section id="contact" className="flex flex-col justify-center content-center py-20">
               <h2 className="text-9xl">Contact</h2>
@@ -124,6 +133,8 @@ export default function Home() {
           </div>
         </main>
       </div>
+        {/* //! Footer section starts here */}
+
     </div>
   );
 }
