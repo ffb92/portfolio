@@ -4,12 +4,14 @@ import Particles from './components/particles';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import SkillDashboard from './components/skillcard';
+import ProjectCard from './components/ProjectCard';
 
 const navigation = [
   { name: 'About Me', href: '#about-me' },
   { name: 'Skills', href: '#skills' },
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
+  { name: 'Education', href: '#education' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -118,6 +120,23 @@ export default function Home() {
               <div className="flex fle-row just">
                 <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
                 <h2 className="sm:text-4xl md:text-6xl px-10">Projects</h2>
+              </div>
+              <div className="px-5">
+                <p className="md:text-xl py-2">
+                  Here's a few of the projects I've worked on. You can see the full list on my
+                  <Link className="underline" href={'https://github.com/ffb92'}>
+                    {' '}
+                    Github profile
+                  </Link>
+                </p>
+              </div>
+              <ProjectCard />
+            </section>
+            {/* //? education section starts here */}
+            <section id="education" className="flex flex-col justify-center content-center py-10 ">
+              <div className="flex fle-row just">
+                <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
+                <h2 className="sm:text-4xl md:text-6xl px-10">Education</h2>
               </div>
               <div className="px-5">
                 <p className="md:text-xl py-2">
