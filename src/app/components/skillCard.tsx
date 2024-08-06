@@ -126,8 +126,8 @@ const SkillDashboard = () => {
 
   return (
     <div>
-      <section id="skills" className="flex flex-col justify-center content-center py-10">
-        <div className="flex flex-row justify-center">
+      <section id="projects" className="flex flex-col py-10 ">
+        <div className="flex flex-row">
           <div className="h-3 w-60 md:block bg-zinc-300 rounded-2xl m-5" />
           <h2 className="sm:text-4xl md:text-6xl px-10">Skills</h2>
         </div>
