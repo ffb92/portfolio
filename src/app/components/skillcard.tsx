@@ -1,8 +1,8 @@
-import React from 'react';
+import Image from 'next/image';
 
 type SkillCardProps = {
   title: string;
-  skills: Array<{ name: string; level: number; color: string }>;
+  skills: Array<{ name: string; level: number; icon: string }>;
 };
 
 const SkillCard = ({ title, skills }: SkillCardProps) => (
@@ -11,14 +11,16 @@ const SkillCard = ({ title, skills }: SkillCardProps) => (
     <ul>
       {skills.map((skill, index) => (
         <li key={index} className="flex items-center mb-2">
-          <span className="text-white mr-2">{skill.name}</span>
+          <span className="text-xl mr-2">{skill.name}</span>
           <div className="flex">
             {[...Array(5)].map((_, i) => (
-              <span
+              <Image
+                width={24}
+                height={24}
                 key={i}
-                className={`w-4 h-4 mr-1 ${
-                  i < skill.level ? skill.color : 'bg-gray-700'
-                } rounded-full`}
+                src={skill.icon}
+                alt={`${skill.name} icon`}
+                className={i < skill.level ? 'mr-1' : 'mr-1 grayscale'}
               />
             ))}
           </div>
@@ -33,40 +35,100 @@ const SkillDashboard = () => {
     {
       title: 'WEB',
       skills: [
-        { name: 'HTML', level: 5, color: 'bg-orange-500' },
-        { name: 'CSS', level: 5, color: 'bg-blue-500' },
-        { name: 'JavaScript', level: 4, color: 'bg-yellow-500' },
-        { name: 'TypeScript', level: 4, color: 'bg-blue-600' },
-        { name: 'React', level: 5, color: 'bg-blue-400' },
-        { name: 'Next.JS', level: 5, color: 'bg-black' },
-        { name: 'Tailwind', level: 5, color: 'bg-pink-500' },
-        { name: 'Node.JS', level: 5, color: 'bg-green-500' },
+        {
+          name: 'HTML',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain.svg',
+        },
+        {
+          name: 'CSS',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain.svg',
+        },
+        {
+          name: 'JavaScript',
+          level: 4,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg',
+        },
+        {
+          name: 'TypeScript',
+          level: 4,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg',
+        },
+        {
+          name: 'React',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+        },
+        {
+          name: 'Next.JS',
+          level: 4,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg',
+        },
+        {
+          name: 'TailwindCSS',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+        },
+        {
+          name: 'Node.JS',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+        },
       ],
     },
     {
       title: 'DATABASE',
       skills: [
-        { name: 'MongoDB', level: 5, color: 'bg-blue-800' },
-        { name: 'Express', level: 5, color: 'bg-purple-600' },
-        { name: 'Prisma', level: 3, color: 'bg-yellow-300' },
+        {
+          name: 'MongoDB',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+        },
+        {
+          name: 'Express',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+        },
+        {
+          name: 'Prisma',
+          level: 3,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg',
+        },
       ],
     },
     {
       title: 'OTHER',
       skills: [
-        { name: 'Figma', level: 3, color: 'bg-blue-800' },
-        { name: 'Windows', level: 5, color: 'bg-purple-600' },
-        { name: 'Linux', level: 4, color: 'bg-yellow-300' },
-        { name: 'Github', level: 4, color: 'bg-red-300' },
+        {
+          name: 'Figma',
+          level: 3,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+        },
+        {
+          name: 'Windows',
+          level: 5,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg',
+        },
+        {
+          name: 'Linux',
+          level: 4,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg',
+        },
+        {
+          name: 'Git',
+          level: 4,
+          icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+        },
       ],
     },
   ];
 
   return (
     <div>
-      <section id="skills" className="flex flex-col justify-center content-center py-10 ">
-        <div className="flex fle-row just">
-          <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
+      <section id="skills" className="flex flex-col justify-center content-center py-10">
+        <div className="flex flex-row justify-center">
+          <div className="h-3 w-60 md:block bg-zinc-300 rounded-2xl m-5" />
           <h2 className="sm:text-4xl md:text-6xl px-10">Skills</h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5">

@@ -98,17 +98,16 @@ export default function Home() {
                   I've been passionate about technology and computer science. Ever since I came into
                   contact with coding, I have been very enthusiastic. I like to try out new things,
                   libraries and frameworks to make great software!
-                  <p className="md:text-xl py-2">
-                    Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
-                    games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
-                    Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
-                    Bros. When I am not at the computer, I spend a lot of time on the football field
-                    as an assistant coach for a local club or cheer for my favorite team, 1. FC
-                    Köln.
-                  </p>
-                  <p className="md:text-xl py-2">
-                    Fun fact: I have three cats who love to keep me company while I code.
-                  </p>
+                </p>
+                <p className="md:text-xl py-2">
+                  Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
+                  games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
+                  Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
+                  Bros. When I am not at the computer, I spend a lot of time on the football field
+                  as an assistant coach for a local club or cheer for my favorite team, 1. FC Köln.
+                </p>
+                <p className="md:text-xl py-2">
+                  Fun fact: I have three cats who love to keep me company while I code.
                 </p>
               </div>
             </section>
@@ -126,17 +125,16 @@ export default function Home() {
                   I've been passionate about technology and computer science. Ever since I came into
                   contact with coding, I have been very enthusiastic. I like to try out new things,
                   libraries and frameworks to make great software!
-                  <p className="md:text-xl py-2">
-                    Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
-                    games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
-                    Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
-                    Bros. When I am not at the computer, I spend a lot of time on the football field
-                    as an assistant coach for a local club or cheer for my favorite team, 1. FC
-                    Köln.
-                  </p>
-                  <p className="md:text-xl py-2">
-                    Fun fact: I have three cats who love to keep me company while I code.
-                  </p>
+                </p>
+                <p className="md:text-xl py-2">
+                  Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
+                  games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
+                  Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
+                  Bros. When I am not at the computer, I spend a lot of time on the football field
+                  as an assistant coach for a local club or cheer for my favorite team, 1. FC Köln.
+                </p>
+                <p className="md:text-xl py-2">
+                  Fun fact: I have three cats who love to keep me company while I code.
                 </p>
               </div>
             </section>
@@ -152,17 +150,16 @@ export default function Home() {
                   I've been passionate about technology and computer science. Ever since I came into
                   contact with coding, I have been very enthusiastic. I like to try out new things,
                   libraries and frameworks to make great software!
-                  <p className="md:text-xl py-2">
-                    Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
-                    games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
-                    Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
-                    Bros. When I am not at the computer, I spend a lot of time on the football field
-                    as an assistant coach for a local club or cheer for my favorite team, 1. FC
-                    Köln.
-                  </p>
-                  <p className="md:text-xl py-2">
-                    Fun fact: I have three cats who love to keep me company while I code.
-                  </p>
+                </p>
+                <p className="md:text-xl py-2">
+                  Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
+                  games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to
+                  Baldur's Gate and fantastic titles from Nintendo, such as Zelda or Super Smash
+                  Bros. When I am not at the computer, I spend a lot of time on the football field
+                  as an assistant coach for a local club or cheer for my favorite team, 1. FC Köln.
+                </p>
+                <p className="md:text-xl py-2">
+                  Fun fact: I have three cats who love to keep me company while I code.
                 </p>
               </div>
             </section>
