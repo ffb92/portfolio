@@ -6,29 +6,29 @@ type SkillCardProps = {
 };
 
 const SkillCard = ({ title, skills }: SkillCardProps) => (
-  <div className='py-10'>
-  <div className="bg-gray-900 p-4 rounded-lg">
-    <h2 className="text-white text-xl font-bold mb-4">{title}</h2>
-    <ul>
-      {skills.map((skill, index) => (
-        <li key={index} className="flex items-center mb-2">
-          <span className="text-xl mr-2">{skill.name}</span>
-          <div className="flex">
-            {[...Array(5)].map((_, i) => (
-              <Image
-                width={24}
-                height={24}
-                key={i}
-                src={skill.icon}
-                alt={`${skill.name} icon`}
-                className={i < skill.level ? 'mr-1' : 'mr-1 grayscale'}
-              />
-            ))}
-          </div>
-        </li>
-      ))}
-    </ul>
-  </div>
+  <div className="py-6">
+    <div className="bg-gray-900 p-4 rounded-lg">
+      <h2 className="text-white text-xl font-bold mb-4">{title}</h2>
+      <ul>
+        {skills.map((skill, index) => (
+          <li key={index} className="flex items-center mb-2">
+            <span className="text-xl mr-2">{skill.name}</span>
+            <div className="flex">
+              {[...Array(5)].map((_, i) => (
+                <Image
+                  width={24}
+                  height={24}
+                  key={i}
+                  src={skill.icon}
+                  alt={`${skill.name} icon`}
+                  className={i < skill.level ? 'mr-1' : 'mr-1 grayscale'}
+                />
+              ))}
+            </div>
+          </li>
+        ))}
+      </ul>
+    </div>
   </div>
 );
 
@@ -128,12 +128,12 @@ const SkillDashboard = () => {
 
   return (
     <div>
-      <section id="projects" className="flex flex-col py-10 ">
-        <div className="flex flex-row">
-          <div className="h-3 w-60 md:block bg-zinc-300 rounded-2xl m-5" />
-          <h2 className="sm:text-4xl md:text-6xl px-10">Skills</h2>
+      <section id="projects" className="py-10">
+        <div className="flex flex-col md:flex-row items-center mb-6">
+          <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5"></div>
+          <h2 className="text-4xl md:text-6xl px-10">Skills</h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <SkillCard key={index} title={category.title} skills={category.skills} />
           ))}

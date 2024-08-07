@@ -1,4 +1,4 @@
-import { FaLinkedin, FaInstagram, FaGithub, FaTwitter, FaReddit, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import Link from 'next/link';
 
 const Footer = () => {
@@ -13,12 +13,12 @@ const Footer = () => {
             <FaGithub className="text-4xl duration-500 text-zinc-500 hover:text-zinc-300" />
           </Link>
         </div>
-        <div className="flex justify-center mb-4 bg-slate-300 w-1/5 h-10 border-solid border-2 border-slate-900 rounded-lg">
+        <div className="flex justify-center mb-4 bg-slate-300 w-4/5 sm:w-1/3 lg:w-1/5 h-10 border-2 border-slate-900 rounded-lg">
           <Link
-            href="mailto:tristan.chin@chintristan.io"
-            className="flex items-center text-l duration-500 text-slate-900 hover:text-slate-600"
+            href="mailto:bwestphal@gmx.net"
+            className="flex items-center text-lg duration-500 text-slate-900 hover:text-slate-600"
           >
-            <FaEnvelope className='mr-1' />
+            <FaEnvelope className="mr-2" />
             <p>bwestphal@gmx.net</p>
           </Link>
         </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           </Link>
         </div>
         <div>
-          <p className="text-sm duration-500 text-zinc-500 hover:text-zinc-300">
+          <p className="text-sm text-zinc-500">
             2024 © Benjamin Westphal
           </p>
         </div>

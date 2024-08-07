@@ -6,7 +6,10 @@
 -Symantisch
 -Graysacle der Icons anpassen
 -Link hover Effekte
--Hosten, Email Adresse
+-Hosten, Email Adresse, dann im Footer anpassen
+-Datenschutz
+-Anderes Logo
+-Logo im Tab
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
