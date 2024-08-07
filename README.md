@@ -1,15 +1,23 @@
 ## Todo
 
--Responsive
+
 -To the top button
--Fonts
--Symantisch
 -Graysacle der Icons anpassen
--Link hover Effekte
 -Hosten, Email Adresse, dann im Footer anpassen
 -Datenschutz
--Anderes Logo
+
+
+
+Done
+----------
+-Responsive
+-Fonts
+-Symantisch
 -Logo im Tab
+-Anderes Logo
+-Link hover Effekte
+
+
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

@@ -126,14 +126,14 @@ export default function Home() {
             <div className="px-0 md:px-10">
               <h2 className="text-4xl md:text-6xl">Hello 👋</h2>
               <p className="text-lg md:text-xl py-7">
-                I'm a web developer who was born and raised near Cologne. Since I was a child, I've
+                I am a web developer who was born and raised near Cologne. Since I was a child, I have
                 been passionate about technology and computer science. Ever since I came into
                 contact with coding, I have been very enthusiastic. I like to try out new things,
                 libraries and frameworks to make great software!
               </p>
               <p className="text-lg md:text-xl py-2">
                 Apart from programming, I am an enthusiastic gamer. From almost all Square Enix
-                games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to Baldur's
+                games, like Kingdom Hearts or Final Fantasy, which accompanied my youth, to Baldurs
                 Gate and fantastic titles from Nintendo, such as Zelda or Super Smash Bros. When I
                 am not at the computer, I spend a lot of time on the football field as an assistant
                 coach for a local club or cheer for my favorite team, 1. FC Köln.
@@ -153,7 +153,7 @@ export default function Home() {
             </div>
             <div className="px-5 py-10">
               <p className="text-lg md:text-xl py-2">
-                Here's a few of the projects I've worked on. You can see the full list on my
+                Here is a few of the projects I have worked on. You can see the full list on my
                 <Link
                   className="underline text-2xl text-zinc-500 duration-500 hover:text-zinc-300"
                   href={'https://github.com/ffb92'}
