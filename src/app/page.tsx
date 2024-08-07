@@ -110,14 +110,17 @@ export default function Home() {
         {/* Parent div for the sections */}
         <div className="px-4 lg:px-40">
           {/* About-me section */}
-          <section id="about-me" className="flex flex-col md:flex-row justify-center content-center">
+          <section
+            id="about-me"
+            className="flex flex-col md:flex-row justify-center content-center"
+          >
             <div>
               <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5" />
               <div className="py-10">
                 <Image
                   src="/about_me.png"
                   alt="about_me_picture"
-                  width={1600}
+                  width={600}
                   height={500}
                   className="rounded-2xl"
                 />
@@ -126,8 +129,8 @@ export default function Home() {
             <div className="px-0 md:px-10">
               <h2 className="text-4xl md:text-6xl">Hello 👋</h2>
               <p className="text-lg md:text-xl py-7">
-                I am a web developer who was born and raised near Cologne. Since I was a child, I have
-                been passionate about technology and computer science. Ever since I came into
+                I am a web developer who was born and raised near Cologne. Since I was a child, I
+                have been passionate about technology and computer science. Ever since I came into
                 contact with coding, I have been very enthusiastic. I like to try out new things,
                 libraries and frameworks to make great software!
               </p>

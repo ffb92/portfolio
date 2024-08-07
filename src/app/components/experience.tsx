@@ -38,7 +38,7 @@ const Experience = () => {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8">
-      <div className="bg-gray-900 p-4 rounded-lg">
+      <div className="bg-gray-900 p-4 rounded-lg md:w-2/3">
         <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
         {educationData.map((edu, index) => (
           <div key={index} className="mb-4">

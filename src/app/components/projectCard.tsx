@@ -3,7 +3,7 @@ import Link from 'next/link';
 const ProjectCard = () => {
   return (
     <div className="pb-10">
-      <div className="flex flex-col md:flex-row md:space-x-4">
+      <div className="flex flex-col md:flex-row">
         <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-sm mx-auto mb-4 md:mb-0 w-full md:w-1/2">
           <div className="flex items-center mb-4">
             <div className="bg-purple-600 rounded-full h-12 w-12 flex items-center justify-center">
