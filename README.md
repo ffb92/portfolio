@@ -1,7 +1,6 @@
 ## Todo
 
 -To the top button
--Zu components auslagern
 -Graysacle der Icons anpassen
 -Hosten, Email Adresse, dann im Footer anpassen
 -Datenschutz
@@ -14,6 +13,7 @@
 -Logo im Tab
 -Anderes Logo
 -Link hover Effekte
+-Zu components auslagern
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
