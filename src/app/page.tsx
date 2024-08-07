@@ -144,16 +144,6 @@ export default function Home() {
                 <Education />
               </div>
             </section>
-            {/* //? contact section starts here */}
-            <section id="contact" className="flex flex-col justify-center content-center py-10 ">
-              <div className="flex fle-row just">
-                <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
-                <h2 className="sm:text-4xl md:text-6xl px-10">Contact</h2>
-              </div>
-              <div className="px-5">
-              <Contact />
-              </div>
-            </section>
           </div>
         </main>
       </div>
