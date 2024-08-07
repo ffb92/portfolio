@@ -30,6 +30,7 @@ const Experience = () => {
   ];
 
   return (
+    <div className="py-10">
     <div className="bg-gray-900 p-4 rounded-lg">
       <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
       {educationData.map((edu, index) => (
@@ -49,6 +50,7 @@ const Experience = () => {
           <p>{work.description}</p>
         </div>
       ))}
+    </div>
     </div>
   );
 };

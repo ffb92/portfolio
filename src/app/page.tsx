@@ -81,7 +81,7 @@ export default function Home() {
           {/* //? parent div for the sections */}
           <div className="px-40">
             {/* //? about-me section starts here */}
-            <section id="about-me" className="flex justify-center content-center py-10 ">
+            <section id="about-me" className="flex justify-center content-center">
               <div>
                 <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
                 <div className="py-10">
@@ -96,7 +96,7 @@ export default function Home() {
               </div>
               <div className="px-10">
                 <h2 className="sm:text-4xl md:text-6xl">Hello 👋</h2>
-                <p className="md:text-xl py-2">
+                <p className="md:text-xl py-7">
                   I'm a web developer who was born and raised near Cologne. Since I was a child,
                   I've been passionate about technology and computer science. Ever since I came into
                   contact with coding, I have been very enthusiastic. I like to try out new things,
@@ -117,12 +117,12 @@ export default function Home() {
             {/* //? skills section starts here */}
             <SkillDashboard />
             {/* //? projects section starts here */}
-            <section id="projects" className="flex flex-col justify-center content-center py-10 ">
+            <section id="projects" className="flex flex-col justify-center content-center ">
               <div className="flex fle-row just">
                 <div className=" h-3 w-60 md:block  bg-zinc-300 rounded-2xl m-5" />
                 <h2 className="sm:text-4xl md:text-6xl px-10">Projects</h2>
               </div>
-              <div className="px-5">
+              <div className="px-5 py-10">
                 <p className="md:text-xl py-2">
                   Here's a few of the projects I've worked on. You can see the full list on my
                   <Link className="underline" href={'https://github.com/ffb92'}>

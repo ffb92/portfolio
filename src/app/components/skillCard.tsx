@@ -6,6 +6,7 @@ type SkillCardProps = {
 };
 
 const SkillCard = ({ title, skills }: SkillCardProps) => (
+  <div className='py-10'>
   <div className="bg-gray-900 p-4 rounded-lg">
     <h2 className="text-white text-xl font-bold mb-4">{title}</h2>
     <ul>
@@ -27,6 +28,7 @@ const SkillCard = ({ title, skills }: SkillCardProps) => (
         </li>
       ))}
     </ul>
+  </div>
   </div>
 );
 
