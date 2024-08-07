@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
         <p className="mb-4">
-          Your privacy is important to us. It is [Your Name]'s policy to respect your privacy
+          Your privacy is important to us. It is [Your Name] policy to respect your privacy
           regarding any information we may collect from you across our website, [Your Website], and
           other sites we own and operate.
         </p>
