@@ -3,7 +3,6 @@
 -To the top button
 -Graysacle der Icons anpassen
 -Hosten, Email Adresse, dann im Footer anpassen
--Datenschutz
 
 ## Done
 
@@ -14,6 +13,7 @@
 -Anderes Logo
 -Link hover Effekte
 -Zu components auslagern
+-Datenschutz
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
