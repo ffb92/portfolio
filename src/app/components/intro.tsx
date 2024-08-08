@@ -17,7 +17,7 @@ const intro = () => {
               transition={{ duration: 1.5, ease: 'easeOut' }}
             />
             <motion.h1
-              className="py-3.5 px-0.5 z-10 text-4xl text-transparent bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl bg-clip-text"
+              className="py-3.5 px-0.5 z-10 text-4xl text-transparent text-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-8xl bg-clip-text"
               initial={{ opacity: 0, scale: 1 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 2.5, ease: 'easeOut' }}
