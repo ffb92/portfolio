@@ -7,7 +7,7 @@ type SkillCardProps = {
 
 const SkillCard = ({ title, skills }: SkillCardProps) => (
   <div className="py-6">
-    <div className="bg-gray-900 p-4 rounded-lg">
+    <div className="bg-gray-900 p-4 rounded-lg h-96">
       <h2 className="text-white text-xl font-bold mb-4">{title}</h2>
       <ul>
         {skills.map((skill, index) => (

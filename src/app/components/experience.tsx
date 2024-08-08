@@ -39,11 +39,11 @@ const Experience = () => {
   return (
     <section id="experience" className="flex flex-col justify-center content-center py-10">
       <div className="flex flex-row">
-        <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5" />
+        <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5"/>
         <h2 className="text-4xl md:text-6xl px-10">Experience</h2>
       </div>
       <div className=" sm:p-6 lg:p-8">
-        <div className="bg-gray-900 p-4 rounded-lg md:w-2/3">
+        <div className="bg-gray-900 p-4 rounded-lg md:w-full">
           <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
           {educationData.map((edu, index) => (
             <div key={index} className="mb-4">

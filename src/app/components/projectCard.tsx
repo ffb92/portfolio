@@ -47,6 +47,16 @@ const ProjectCard = () => {
             </div>
             <p className="mb-4">The website you are currently on.</p>
           </div>
+
+          <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-sm mx-auto w-full md:w-1/2">
+            <div className="flex items-center mb-4">
+              <div className="bg-yellow-600 rounded-full h-12 w-12 flex items-center justify-center">
+                <span className="text-2xl font-bold">MS</span>
+              </div>
+              <h2 className="ml-4 text-xl font-semibold">New Website</h2>
+            </div>
+            <p className="mb-4">More Projects coming soon.</p>
+          </div>
         </div>
       </div>
     </section>
