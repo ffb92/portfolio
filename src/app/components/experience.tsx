@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Experience = () => {
-  const educationData = [
+  const workData = [
     {
       institution: 'Testflow GmbH',
       degree: 'HEAD OF ONBOARDING & SUPPORT',
@@ -18,7 +18,12 @@ const Experience = () => {
     },
   ];
 
-  const workData = [
+  const educationData = [
+    {
+      institution: 'Digital Career Institute',
+      degree: 'Fullstack Webdeveloper',
+      period: '2023 - 2024',
+    },
     {
       institution: 'Expert Bergisch Gladbach',
       degree: 'Education Retail Salesman',
@@ -39,13 +44,13 @@ const Experience = () => {
   return (
     <section id="experience" className="flex flex-col justify-center content-center py-10">
       <div className="flex flex-row">
-        <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5"/>
+        <div className="h-3 w-60 bg-zinc-300 rounded-2xl m-5" />
         <h2 className="text-4xl md:text-6xl px-10">Experience</h2>
       </div>
       <div className=" sm:p-6 lg:p-8">
         <div className="bg-gray-900 p-4 rounded-lg md:w-full">
           <h2 className="text-2xl font-bold mb-4">Work Experience</h2>
-          {educationData.map((edu, index) => (
+          {workData.map((edu, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{edu.institution}</h3>
               <p>{edu.degree}</p>
@@ -54,7 +59,7 @@ const Experience = () => {
             </div>
           ))}
           <h2 className="text-2xl font-bold mb-4">Education</h2>
-          {workData.map((work, index) => (
+          {educationData.map((work, index) => (
             <div key={index} className="mb-4">
               <h3 className="text-xl font-semibold">{work.institution}</h3>
               <p>{work.degree}</p>
