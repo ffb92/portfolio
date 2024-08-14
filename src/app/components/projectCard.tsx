@@ -31,7 +31,7 @@ const ProjectCard = () => {
             </div>
             <p className="mb-4">My final React project for a local carnival club.</p>
             <Link
-              href="https://github.com/ffb92/react-final-project"
+              href="https://react-project.benniwest.de/"
               className="text-xl duration-500 text-zinc-500 hover:text-zinc-300"
             >
               Click Here!
