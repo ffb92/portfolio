@@ -50,12 +50,18 @@ const ProjectCard = () => {
 
           <div className="bg-gray-900 text-white p-4 rounded-lg shadow-lg max-w-sm mx-auto w-full md:w-1/2">
             <div className="flex items-center mb-4">
-              <div className="bg-yellow-600 rounded-full h-12 w-12 flex items-center justify-center">
-                <span className="text-2xl font-bold">MS</span>
+              <div className="bg-green-600 rounded-full h-12 w-12 flex items-center justify-center">
+                <span className="text-2xl font-bold">BG</span>
               </div>
-              <h2 className="ml-4 text-xl font-semibold">New Website</h2>
+              <h2 className="ml-4 text-xl font-semibold">BodyGen App</h2>
             </div>
-            <p className="mb-4">More Projects coming soon.</p>
+            <p className="mb-4">The customer application for BodyGen.</p>
+            <Link
+              href="https://app.bodygen.de/"
+              className="text-xl duration-500 text-zinc-500 hover:text-zinc-300"
+            >
+              Click Here!
+            </Link>
           </div>
         </div>
       </div>

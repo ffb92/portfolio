@@ -3,6 +3,13 @@ import React from 'react';
 const Experience = () => {
   const workData = [
     {
+      institution: 'Bodygen GmbH',
+      degree: 'Frontend Developer',
+      period: '2024 - 2025',
+      description:
+        'As a Frontend Developer at Bodygen, I developed and maintained the customer-facing web application using modern technologies like React and Next.js.',
+    },
+    {
       institution: 'Testflow GmbH',
       degree: 'HEAD OF ONBOARDING & SUPPORT',
       period: '2021 - 2023',
